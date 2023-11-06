@@ -1,8 +1,7 @@
 Key concepts for new Azure Pipelines users
 =============================================
 
-
-각 파이프라인은 여러개의 스태이지로 포함할 수 있고 스태이지 안에는 여러개 잡을 실행 할 수 있다. 잡마다 에이전트가 할당되어 처리된다.
+각 파이프라인은 여러개의 스태이지를 포함할 수 있고 스태이지 안에는 여러개 잡을 실행 할 수 있다. 잡마다 에이전트(VM)가 할당되어 처리된다.
 
 ![Alt text](image.png)
 
@@ -10,7 +9,7 @@ Key concepts for new Azure Pipelines users
 
 ![Alt text](image-1.png)
 
-# Microsoft 호스팅 에이전트
+# Microsoft 호스팅 에이전트 (Microsoft-Hosted)
 
  - 1 Free Microsoft-hosted CI/CD
     - 파이프라인이 하나는 무료 (여러개 잡이 하나에 파이프라인에서 실행 가능 하기 때문에 병렬처리 가능)
@@ -20,7 +19,7 @@ Key concepts for new Azure Pipelines users
  - $40 per extra Microsoft-hosted CI/CD parallel job extra self-hosted CI/CD parallel job with unlimited minutes
     - 1개 무료 외 파이프라인 추가 시 40달러 (자동으로 관래해줘서 높은 가격 실행 시간제한은 없다.)
 
-# 자체 호스팅 에이전트
+# 자체 호스팅 에이전트 (Self-Hosted)
  - 1 Free Self-Hosted CI/CD
    - 파이프라인이 하나는 무료 (여러개 잡이 하나에 파이프라인에서 실행 가능 하기 때문에 병렬처리 가능)
  - 1 self-hosted job with unlimited minutes per month 
@@ -29,13 +28,9 @@ Key concepts for new Azure Pipelines users
    - 1개 무료 외 파이프라인 추가 시 15달러 
  
 
+위 두개의 제일 큰 차이점 Microsoft 호스팅 에이전트는 자동으로 VM 만들어지고 잡을 처리한 후 폐기되는 반면 자체 호스팅 에이전트는 사용자가 직접 VM 을 만들어서 셋팅해야 한다. 
 
-위 두개의 제일 큰 차이점 Microsoft 호스팅 에이전트 는 자동으로 VM 만들어지고 잡을 처리한 후 폐기된다.
-자체 호스팅 에이전트는 사용자가 직접 VM 을 만들어서 셋팅해야 한다. 
-
-
-
-# Microsoft 호스팅 에이전트 vs. 자체 호스팅 에이전트
+# Microsoft 호스팅 에이전트 vs. 자체 호스팅 에이전트 (비교표)
 
 
 | 종류                    | Microsoft 호스팅 에이전트                | 자체 호스팅 에이전트                    |
