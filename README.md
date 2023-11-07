@@ -15,15 +15,15 @@ Key concepts for new Azure Pipelines users
     - 파이프라인이 하나는 무료 (여러개 잡이 하나에 파이프라인에서 실행 가능 하기 때문에 병렬처리 가능)
 
  - 1 Microsoft-hosted job with 1,800 minutes per month for CI/CD
-    - 셀프 호스트되는 VM 사용하는 파이프라인은 실행 시간을 기준으로 달마다 1800 분 무료 
+    - Microsoft 호스트되는 VM 사용 파이프라인은 실행 시간을 기준으로 달마다 1800 분 무료 
  - $40 per extra Microsoft-hosted CI/CD parallel job extra self-hosted CI/CD parallel job with unlimited minutes
-    - 1개 무료 외 파이프라인 추가 시 40달러 (자동으로 관래해줘서 높은 가격 실행 시간제한은 없다.)
+    - 1개 무료 외 파이프라인 추가 시 40달러 (자동으로 관래해줘서 높은 가격 추가 분은 실행 시간제한은 없다.)
 
 # 자체 호스팅 에이전트 (Self-Hosted)
  - 1 Free Self-Hosted CI/CD
    - 파이프라인이 하나는 무료 (여러개 잡이 하나에 파이프라인에서 실행 가능 하기 때문에 병렬처리 가능)
  - 1 self-hosted job with unlimited minutes per month 
-   - 1 달 시간 실행 시간 제한 없음 
+   - 실행 시간 제한 없음 
  -  $40 per extra Microsoft-hosted CI/CD parallel job and $15 per
    - 1개 무료 외 파이프라인 추가 시 15달러 
  
